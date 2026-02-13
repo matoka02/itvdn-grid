@@ -24,13 +24,7 @@ h1 {
 }
 
 .wrapper {
-  display: grid;
-  /* background-color: #be3455; */
-}
-
-.wrapper {
   padding: 30px;
-  width: 300px;
   margin: 0 auto;
   display: grid;
   gap: 5px;
@@ -42,4 +36,42 @@ h1 {
   background-color: #ffd8a8;
   padding: 1em;
   color: #d9480f;
+}
+
+/* subgrid */
+
+/* .wrapper {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.item {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-gap: 10px;
+  border: 1px solid #ccc;
+}
+
+.sub-item {
+  border: 1px solid #ccc;
+  padding: 5px;
+} */
+
+/* position */
+
+.wrapper {
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  grid-gap: 20px;
+  position: relative;
+}
+
+.box3 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  position: absolute;
+  top: 40px;
+  left: 40px;
 }
